@@ -1,11 +1,16 @@
 import SubjectList from './SubjectList';
+import Counter from './Counter';
+import TempConverter from './TempConverter';
 
 function App() {
   return (
     <div>
       Hello World
-      <SubjectList data={CMSCSubjects} title={"Computer Science Subjects"}/>
-      <SubjectList data={CHEMSubjects} title={"Chemistry"}/>
+      {/* <SubjectList data={CMSCSubjects} title={"Computer Science Subjects"}/>
+      <SubjectList data={CHEMSubjects} title={"Chemistry"}/> */}
+      <SubjectList list={CMSCSubjects} />
+      <Counter val={10}/>
+      <TempConverter />
     </div>
   );
 }
